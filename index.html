@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="hello-world">
+  <head>
+    <script src="assets/angular.min.js"></script>
+    <script>
+        angular.module("hello-world", []);
+        angular.module("hello-world").controller("helloController", function($scope) {
+            $scope.message = "Hello World"
+        });
+    </script>
+  </head>
+  <body>
+    <div ng-controller="helloController">
+        {{message}}
+    </div>
+  </body>
+</html>
